@@ -1,0 +1,36 @@
+### GET /api/recipe/
+GET localhost:8881/api/recipe/999
+
+### GET /api/recipe/
+GET localhost:8881/api/recipe/1
+
+### POST /api/recipe/
+POST localhost:8881/api/recipe/new
+content-type: application/json
+authorization: Basic user@google.com qwerty
+
+{
+  "name": "Fresh Mint Tea",
+  "description": "Light, aromatic and refreshing beverage, ...",
+  "category": "Beverage",
+  "ingredients": ["boiled water", "honey", "fresh mint leaves"],
+  "directions": ["Boil water", "Pour boiling hot water into a mug", "Add fresh mint leaves", "Mix and let the mint leaves seep for 3-5 minutes", "Add honey and mix again"]
+}
+
+### DELETE /api/delete/1
+DELETE localhost:8881/api/recipe/3
+
+### GET /api/recipe/search
+GET localhost:8881/api/recipe/search/?name=Tea
+
+### GET /api/recipe/search
+GET localhost:8881/api/recipe/search/?category=z
+
+### POST /api/register
+POST localhost:8881/api/register
+content-type: application/json;
+
+{
+  "email": "user@google.com",
+  "password": "qwerty"
+}
